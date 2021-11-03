@@ -1,4 +1,4 @@
-import numpy as np
+
 import json
 
 
@@ -14,7 +14,7 @@ for i in  range (len(Initial)):
   list2=list1[i+1].split(",")
   for j in range (len(Initial)):
     list3=list2[j].split(",")
-    list3=list(np.float_(list3))
+    list3=list(float(list3))
     In_dict[Initial[i]][Initial[j]]=list3[0]
 First="b"
 Second="w"
