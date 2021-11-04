@@ -10,7 +10,7 @@ value=[]
 
 for i in remain:
   temp=i[:-1].split(',')
-  value.append(temp)
+  value.append([float(i) for i in temp])
 
 _json = {
   'index': index,
