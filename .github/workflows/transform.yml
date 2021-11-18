@@ -18,6 +18,8 @@ jobs:
     - run: pip3 install --upgrade pip
     - run: pip3 install numpy
     - run: python3 CreateInitial.py > InitialTable.json
+    - run: python3 CreateFinal.py > FinalTable.json
+
     
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
